@@ -4,7 +4,7 @@ from flask import Blueprint, render_template, jsonify
 
 from web_app.services.twitter_service import api as twitter_api
 from web_app.services.basilica_service import connection as basilica_connection
-from web_app.models import User, Tweet, db
+from .models import User, Tweet, db
 
 twitter_routes = Blueprint("twitter_routes", __name__)
 

@@ -2,7 +2,7 @@
 
 from flask import Blueprint, jsonify, request, render_template, flash, redirect
 
-from web_app.models import Book, db
+from .models import Book, db
 
 book_routes = Blueprint("book_routes", __name__)
 
